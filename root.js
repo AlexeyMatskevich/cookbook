@@ -1,5 +1,5 @@
 import { combineReducers } from "redux";
-import { recipesReducer } from "./reducerts/recipes";
+import { recipesReducer } from "./reducer/recipes";
 import { ingredientsReducer } from "./reducer/ingredients";
 
 export default combineReducers({
