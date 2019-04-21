@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import { store } from "../../store/store";
+import store from "../../store/store";
 import { addRecipe } from '../../actions/recipes';
 
 function updateUI() {

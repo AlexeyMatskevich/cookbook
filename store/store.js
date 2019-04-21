@@ -1,5 +1,11 @@
-import { applyMiddleware, createStore } from 'redux';
+import { applyMiddleware, createStore } from 'redux'
 import rootReducers from '../reducer/root'
-import logMiddleware from '../middleware/log';
+import logMiddleware from '../middleware/log'
+import apiMiddleware from '../middleware/api'
 
-export const store = createStore(rootReducers, applyMiddleware(logMiddleware));
+const store = createStore(
+  rootReducers,
+  applyMiddleware(logMiddleware, apiMiddleware)
+);
+
+export default store
